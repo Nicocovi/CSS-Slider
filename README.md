@@ -6,6 +6,6 @@ It can be used to navigate through steps within a single controller. Example Ang
 
 Screenshots:
 
-![image](img/step1.JPG)
+![image](step1.PNG)
 
-![image](img/step2.JPG)
+![image](step2.PNG)
