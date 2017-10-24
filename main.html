@@ -1,63 +1,103 @@
-<!-- main template -->
-<div class="content">
-    <span flex="20"></span>
-    <div class="mdcardcontainer">
-        <div id="container" class="container slider-one-active">
-            <div class="steps">
-                <div class="step step-one">
-                    <div class="liner"></div>
-                    <span>1</span>
-                </div>
-                <div class="step step-two">
-                    <div class="liner"></div>
-                    <span>2</span>
-                </div>
-                <div class="step step-three">
-                    <div class="liner"></div>
-                    <span>3</span>
-                </div>
-				<div class="step step-four">
-                    <div class="liner"></div>
-                    <span>4</span>
-                </div>
-                <div class="step step-five">
-                    <div class="liner"></div>
-                    <span>5</span>
-                </div>
-            </div>
-            <div class="line">
-                <div class="dot-move"></div>
-                <div class="dot one"></div>
-                <div class="dot two"></div>
-                <div class="dot three"></div>
-				<div class="dot four"></div>
-				<div class="dot five"></div>
-            </div>
-            <div class="slider-ctr">
-                <div class="slider">
-<!-- *************************************************  -->
-                    <div class="slider-form slider-one">
-						
-                    </div>
-<!-- *************************************************  -->
-					<div class="slider-form slider-two">
-                        
-                    </div>
-<!-- *************************************************  -->
-                    <div class="slider-form slider-three">
-                        
-                    </div>
-<!-- *************************************************  -->
-                    <div class="slider-form slider-four">
-                        
-                    </div>
-<!-- *************************************************  -->
-                    <div class="slider-form slider-five">
-                        
-                    </div>
-<!-- *************************************************  -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!doctype html>
+<html>
+    <head>
+        <title>CSS Slider</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+		<script src="main.js"></script>
+    </head>
+    <body>
+		<!-- main template -->
+		<div class="content">
+			<span flex="20"></span>
+			<div class="mdcardcontainer">
+				<div id="container" class="container slider-one-active">
+					<div class="steps">
+						<div class="step step-one">
+							<div class="liner"></div>
+							<span>1</span>
+						</div>
+						<div class="step step-two">
+							<div class="liner"></div>
+							<span>2</span>
+						</div>
+						<div class="step step-three">
+							<div class="liner"></div>
+							<span>3</span>
+						</div>
+						<div class="step step-four">
+							<div class="liner"></div>
+							<span>4</span>
+						</div>
+						<div class="step step-five">
+							<div class="liner"></div>
+							<span>5</span>
+						</div>
+					</div>
+					<div class="line">
+						<div class="dot-move"></div>
+						<div class="dot one"></div>
+						<div class="dot two"></div>
+						<div class="dot three"></div>
+						<div class="dot four"></div>
+						<div class="dot five"></div>
+					</div>
+					<div class="slider-ctr">
+						<div class="slider">
+		<!-- *************************************************  -->
+							<div class="slider-form slider-one">
+								<div>
+									<h1>Step 1</h1>
+								</div>
+								<p></p>
+								<div>
+									<button type="button" onclick="firstClick()" class="">&nbsp NEXT &nbsp</button>
+								</div>
+							</div>
+		<!-- *************************************************  -->
+							<div class="slider-form slider-two">
+								<div>
+									<h1>Step 2</h1>
+								</div>
+								<p></p>
+								<div>
+									<button type="button" onclick="secondClick()" class="">&nbsp NEXT &nbsp</button>
+								</div>
+							</div>
+		<!-- *************************************************  -->
+							<div class="slider-form slider-three">
+								<div>
+									<h1>Step 3</h1>
+								</div>
+								<p></p>
+								<div>
+									<button type="button" onclick="thirdClick()" class="">&nbsp NEXT &nbsp</button>
+								</div>
+							</div>
+		<!-- *************************************************  -->
+							<div class="slider-form slider-four">
+								<div>
+									<h1>Step 4</h1>
+								</div>
+								<p></p>
+								<div>
+									<button type="button" onclick="fourthClick()" class="">&nbsp NEXT &nbsp</button>
+								</div>
+							</div>
+		<!-- *************************************************  -->
+							<div class="slider-form slider-five">
+								<div>
+									<h1>Step 5</h1>
+								</div>
+								<p></p>
+								<div>
+									<button type="button" class="">&nbsp FINISH &nbsp</button>
+								</div>
+							</div>
+		<!-- *************************************************  -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
