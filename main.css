@@ -1,0 +1,326 @@
+/* CSS Slider */
+
+* {
+	font-size: 16px;
+}
+
+input:focus,
+button:focus {
+	outline: none;
+}
+
+button:hover,
+.reset:hover {
+	opacity: .8;
+}
+
+button:active{
+	opacity: .5;
+}
+
+.container {
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.steps {
+	margin-bottom: 10px;
+	position: relative;
+	height: 25px;
+}
+
+.steps > div {
+	position: absolute;
+	top: 0;
+	-webkit-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	transform: translate(-50%);
+	height: 25px;
+	padding: 0 5px;;
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+}
+
+.steps > div > span {
+	line-height: 25px;
+	height: 25px;
+	margin: 0;
+	color: #777;
+	font-size: .9rem;
+	font-weight: 300;
+}
+
+.steps > div > .liner {
+	position: absolute;
+	height: 2px;
+	width: 0%;
+	left: 0;
+	top: 50%;
+	margin-top: -1px;
+	background: #999;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+}
+
+.step-one {
+	left: 0;
+}
+
+.step-two {
+	left: 25%;
+}
+
+.step-three {
+	left: 50%;
+}
+.step-four {
+	left: 75%;
+}
+
+.step-five {
+	left: 100%;
+}
+
+.line {
+	width: 100%;
+	height: 5px;
+	background: #ddd;
+	position: relative;
+	border-radius: 10px;
+	overflow: visible;
+	margin-bottom: 50px;
+}
+
+.line .dot-move {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 15px;
+	height: 15px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #ddd;
+	border-radius: 50%;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+}
+
+.line .dot {
+	position: absolute;
+	top: 50%;
+	width: 15px;
+	height: 15px;
+	left: 0;
+	background: #ddd;
+	border-radius: 50%;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+	-webkit-transform: translate(-50%, -50%) scale(.5);
+	-ms-transform: translate(-50%, -50%) scale(.5);
+	transform: translate(-50%, -50%) scale(.5);
+}
+
+.line .dot.one {
+	left: 0%;
+	background: #bbb;
+}
+
+.line .dot.two {
+	left: 25%;
+	background: #bbb;
+}
+
+.line .dot.three {
+	left: 50%;
+	background: #bbb;
+}
+
+.line .dot.four {
+	left: 75%;
+	background: #bbb;
+}
+
+.line .dot.five {
+	left: 100%;
+	background: #bbb;
+}
+
+.container.slider-one-active .dot.one {
+	background: #5892fc;
+}
+.container.slider-two-active .dot.two {
+	background: #5892fc;
+}
+.container.slider-three-active .dot.three {
+	background: #5892fc;
+}
+.container.slider-four-active .dot.four {
+	background: #5892fc;
+}
+.container.slider-five-active .dot.five {
+	background: #5892fc;
+}
+
+.slider-ctr {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider {
+	overflow: hidden;
+	width: 2000px;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+	-webkit-transform: translate(0px) scale(1);
+	-ms-transform: translate(0px) scale(1);
+	transform: translate(0px) scale(1);
+}
+
+.slider-one,
+.slider-two,
+.slider-three,
+.slider-four,
+.slider-five {
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+}
+
+.slider-form {
+	float: left;
+	width: 400px;
+	text-align: center;
+}
+
+.slider-form button {
+  display: inline-block;
+  text-decoration: none;
+	background: #5892fc;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	font-size: 1rem;
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: 300;
+	position: relative;
+}
+
+/*	one */
+
+.container.one .line .dot-move {
+	left: 0%;
+	-webkit-animation: .3s anim 1;
+}
+
+.container.one .line .dot.step-one {
+	background: #5892fc;
+}
+
+.container.one .slider {
+	-webkit-transform: translate(-400px);
+	-ms-transform: translate(-400px);
+	transform: translate(-400px);
+}
+
+/*	two */
+
+.container.two .line .dot-move {
+	left: 25%;
+	-webkit-animation: .3s anim 1;
+}
+
+.container.two .line .dot.step-two {
+	background: #5892fc;
+}
+
+.container.two .slider {
+	-webkit-transform: translate(-400px);
+	-ms-transform: translate(-400px);
+	transform: translate(-400px);
+}
+
+.container.two .step-one .liner 
+ {
+	width: 100%;
+}
+
+/*	three */
+
+.container.three .line .dot-move {
+	left: 50%;
+	-webkit-animation: .3s anim 1;
+}
+
+.container.three .line .dot.step-three {
+	background: #5892fc;
+}
+
+.container.three .slider {
+	-webkit-transform: translate(-800px);
+	-ms-transform: translate(-800px);
+	transform: translate(-800px);
+}
+
+.container.three .step-one .liner,
+.container.three .step-two .liner
+ {
+	width: 100%;
+}
+
+/*	four */
+
+.container.four .line .dot-move {
+	left: 75%;
+	-webkit-animation: .3s anim 1;
+}
+
+.container.four .line .dot.step-four {
+	background: #5892fc;
+}
+
+.container.four .slider {
+	-webkit-transform: translate(-1200px);
+	-ms-transform: translate(-1200px);
+	transform: translate(-1200px);
+}
+
+.container.four .step-one .liner,
+.container.four .step-two .liner,
+.container.four .step-three .liner
+ {
+	width: 100%;
+}
+
+/*	five */
+
+.container.five .line .dot-move {
+	left: 100%;
+	-webkit-animation: .3s anim 1;
+}
+
+.container.five .line .dot.step-five {
+	background: #5892fc;
+}
+
+.container.five .slider {
+	-webkit-transform: translate(-1600px);
+	-ms-transform: translate(-1600px);
+	transform: translate(-1600px);
+}
+
+.container.five .step-two .liner,
+.container.five .step-three .liner,
+.container.five .step-four .liner,
+.container.five .step-one .liner
+ {
+	width: 100%;
+}
